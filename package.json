@@ -1,0 +1,28 @@
+{
+  "name": "ios-app-metadata-finder",
+  "description": "Obtains App Store metadata for a list of iOS apps using Apple's VPP services API",
+  "author": "John Royal <npm@johnmroyal.com> (https://johnmroyal.com/)",
+  "scripts": {
+    "start": "node bin/script.js",
+    "test": "standard --fix && ava"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "ava": "^3.9.0",
+    "sinon": "^9.0.2",
+    "standard": "^14.3.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.8.28",
+    "node-fetch": "^2.6.0",
+    "xlsx": "^0.16.2"
+  },
+  "ava": {
+    "files": [
+      "test/**/*",
+      "!test/fixtures",
+      "!test/shared.js"
+    ]
+  }
+}
